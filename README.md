@@ -14,7 +14,7 @@ By bridging deep psychological reasoning with geometric vector mathematics, Valu
 ## Data Augmentation & The Psychological Translation Layer
 Standard value datasets often suffer from extreme imbalance (e.g., an abundance of 'Achievement' data, but very little for 'Humility'). To solve this, we engineered a Psychological Translation Layer that maps raw emotional data from the GoEmotions dataset directly into psychological value-attainment pairs. This successfully balanced the dataset with over 94,000 diverse examples.
 
-![Distribution of 19 Schwartz Values (Before vs After)](before_after_chart.png)
+![Distribution of 19 Schwartz Values (Before vs After)](graph.jpeg)
 
 ## Model Pipeline (Teacher-Student Distillation)
 To overcome the extreme computational bottleneck of running massive ensemble models in real-time, Valuescope uses an **Ensemble Knowledge Distillation** process:
@@ -27,7 +27,7 @@ The distilled Student model successfully matched the F1 performance (~21.08%) of
 
 The system translates the 38-dimensional tensor outputs back into 19 baseline probabilities to process through the geometric analytical engines. Below is a real-time snapshot of the engines tracking a simulated social media feed:
 
-![Real-Time Analytics Dashboard Output](final_results.png)
+![Real-Time Analytics Dashboard Output](res_ss.jpeg)
 
 *The Ethical Density Score (0.7873) confirms a relatively balanced psychological feed, while the Dissonance Score (0.0105) shows strong alignment between the user and the algorithm. The tracker also captured a continuous change vector with a magnitude of 0.1287 moving at a 149.0-degree trajectory.*
 
